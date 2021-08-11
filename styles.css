@@ -1,0 +1,129 @@
+:root{
+--Moderate-violet:hsl(263,55%,52%);
+--Very-dark-grayish-blue: hsl(217, 19%, 35%);
+--Very-dark-blackish-blue: hsl(219, 29%, 14%);
+--Light-gray: hsl(0, 0%, 81%);
+--Light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+html,body{
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: rgb(247, 247, 247);
+}
+
+main{
+    background-color: var(--Light-grayish-blue);
+    padding: 2rem;
+}
+
+.testimonial-wrapper{
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.purple{
+    background-color: var(--Moderate-violet);
+    background-image: url("images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 2rem) 0;
+}
+
+.blackish-blue{
+    background-color: var(--Very-dark-blackish-blue);
+}
+
+.white{
+    background-color: #fff;
+    color: black;
+}
+
+.grayish-blue{
+    background-color: var(--Very-dark-grayish-blue);
+}
+
+.user-info img{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    border: 1px solid rgb(113, 82, 253);
+    display: inline-block;
+}
+
+.copy-wrapper{
+    display: inline-block;
+}
+
+.name{
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 500;
+    width: auto;
+    color: inherit;
+}
+
+.title{
+    margin: 0;
+    color: inherit;
+    opacity: 0.5;
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+    padding-top: 0.2rem;
+}
+
+.quote{
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.testimonial{
+    line-height: 1.5rem;
+    opacity: 0.7;
+}
+
+#id{
+    grid-area: daniel;
+}
+
+#Jono{
+    grid-area: jono;
+}
+
+#Jeanette{
+    grid-area: jean;
+}
+
+#patrick{
+    grid-area: patty;
+}
+
+#kira{
+    grid-area: kira;
+}
+
+#grid-container{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto, 5);
+    row-gap: 2rem;
+    grid-template-areas:
+    "daniel"
+    "jono"
+    "jean"
+    "patty"
+    "kira";
+
+}
+
+
+
+
+
