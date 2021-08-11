@@ -155,6 +155,11 @@ main{
         "jean patty patty"
         "kira kira .";
     }
+
+    main{
+        height: 100vh;
+        box-sizing: border-box;
+    }
     
 }
 
