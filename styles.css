@@ -18,12 +18,12 @@ html,body{
 
 main{
     background-color: var(--Light-grayish-blue);
-    padding: 2rem;
+    padding: 8rem 2rem;
 }
 
 .testimonial-wrapper{
     box-sizing: border-box;
-    width: 100%;
+    width: min(100% , 325px);
     border-radius: 10px;
     padding: 2rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -88,7 +88,7 @@ main{
     opacity: 0.7;
 }
 
-#id{
+#daniel{
     grid-area: daniel;
 }
 
@@ -120,8 +120,58 @@ main{
     "jean"
     "patty"
     "kira";
+    justify-items: center;
 
 }
+
+@media only screen and (min-width: 768px) { 
+    .testimonial-wrapper{
+        width: 100%;
+    }
+
+    #grid-container{
+        margin: 0 auto;
+        width: fit-content;
+        grid-template-columns: repeat(2, 255px);
+        grid-template-rows: repeat(4, 300px);
+        column-gap: 2rem;
+        grid-template-areas:
+        "daniel daniel"
+        "jean jono"
+        "patty patty"
+        "kira kira";
+
+    }
+    
+}
+
+@media only screen and (min-width: 1024px) { 
+
+    #grid-container{
+        grid-template-columns: repeat(3, 255px);
+        grid-template-rows: repeat(3, 300px);
+        grid-template-areas:
+        "daniel daniel jono"
+        "jean patty patty"
+        "kira kira .";
+    }
+    
+}
+
+@media only screen and (min-width: 1224px) { 
+
+    #grid-container{
+        grid-template-columns: repeat(4, 255px);
+        grid-template-rows: repeat(2, 300px);
+        grid-template-areas:
+        "daniel daniel jono kira"
+        "jean patty patty kira";
+        
+    }
+
+
+}
+
 
 
 
